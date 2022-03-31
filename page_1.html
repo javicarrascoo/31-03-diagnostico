@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="description" content="Evaluación diagnóstica de Introducción al Desarrollo Front End con HTML, CSS y JavaScript" />
+        <meta name="keywords" content="HTML, CSS, JavaScript" />
+        <meta name="author" content="Javiera Carrasco" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link href="style.css" rel="stylesheet" />
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/p5.min.js" integrity="sha512-N4kV7GkNv7QR7RX9YF/olywyIgIwNvfEe2nZtfyj73HdjCUkAfOBDbcuJ/cTaN04JKRnw1YG1wnUyNKMsNgg3g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;800&display=swap" rel="stylesheet">
+    <style>
+    * { margin: 0; padding: 0; }
+    body
+    { background: #8b5a3d;
+      color: #b88b5c;
+      font-family: 'Raleway', sans-serif;
+      font-weight: 400;
+    }
+    div { padding: 2rem; }
+    h1{font-size: calc(2rem + 2vw)
+      font-weight: 800;
+      padding: 0 0 .75rem 0;
+      color: #563030;
+    }
+    p { padding: .75rem 0 0 0;}
+    @media (min-width: 800px) { p { max-width: 60%; } }
+    </style>
+        <title>Una mascota un poco dependiente</title>
+    </head>
+    <body>
+        <div id="uno"><a href="index.html">PORTADA</a></div>
+        <div id="otro"><strong><a href="page_1.html">01</a></strong> / <a href="page_2.html">02</a> / <a href="page_3.html">03</a></div>
+        <div>
+          <h1>Porque mi mascota me persigue.</h1>
+          <p>Suele ser muy frecuente en cachorros debido a que cuando llegan a nuestra casa pasan de estar todo el día en compañía de su familia a vivir con unas personas que no conoce y que no están todo el día en casa.</p>
+          <p>Los perros son animales sociales y se sienten muy cómodos cuando están en compañía de otras personas o perros. Esto no quiere decir que no puedan estar solos, pero simplemente necesitan tiempo para adaptarse a la nueva situación. Nuestro objetivo es facilitarle a nuestro perro las herramientas adecuadas para que este cambio sea rápido y sencillo.</p>
+        <div>
+        <script>
+            function setup() {
+                createCanvas(windowWidth - 50, windowHeight - 50).position(25, 30).style("z-index", -1);
+            }
+            function draw() {
+                background(225);
+            }
+            function windowResized() {
+                resizeCanvas(windowWidth - 50, windowHeight - 50);
+            }
+        </script>
+        <script src="p5pag1.js"></script>
+    </body>
+</html>
